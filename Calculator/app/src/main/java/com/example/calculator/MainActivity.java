@@ -8,12 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    Button btnNumber0;
-    Button btnNumber1;
-    Button btnNumber2;
-    Button btnNumber3;
-    Button btnNumber4;
+    
     Button btnNumber5;
     Button btnNumber6;
     Button btnNumber7;
@@ -39,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnNumber0 = (Button) findViewById(R.id.btnNumber0);
-        btnNumber1 = (Button) findViewById(R.id.btnNumber1);
-        btnNumber2 = (Button) findViewById(R.id.btnNumber2);
-        btnNumber3 = (Button) findViewById(R.id.btnNumber3);
-        btnNumber4 = (Button) findViewById(R.id.btnNumber4);
+        Button btnNumber0 = (Button) findViewById(R.id.btnNumber0);
+        Button btnNumber1 = (Button) findViewById(R.id.btnNumber1);
+        Button btnNumber2 = (Button) findViewById(R.id.btnNumber2);
+        Button btnNumber3 = (Button) findViewById(R.id.btnNumber3);
+        Button btnNumber4 = (Button) findViewById(R.id.btnNumber4);
         btnNumber5 = (Button) findViewById(R.id.btnNumber5);
         btnNumber6 = (Button) findViewById(R.id.btnNumber6);
         btnNumber7 = (Button) findViewById(R.id.btnNumber7);
