@@ -8,14 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    
-    Button btnNumber5;
-    Button btnNumber6;
-    Button btnNumber7;
-    Button btnNumber8;
-    Button btnNumber9;
-    TextView txtResult;
-    EditText edtInput;
+
     Button btnCE;
     Button btnC;
     Button btnDelete;
@@ -39,15 +32,15 @@ public class MainActivity extends AppCompatActivity {
         Button btnNumber2 = (Button) findViewById(R.id.btnNumber2);
         Button btnNumber3 = (Button) findViewById(R.id.btnNumber3);
         Button btnNumber4 = (Button) findViewById(R.id.btnNumber4);
-        btnNumber5 = (Button) findViewById(R.id.btnNumber5);
-        btnNumber6 = (Button) findViewById(R.id.btnNumber6);
-        btnNumber7 = (Button) findViewById(R.id.btnNumber7);
-        btnNumber8 = (Button) findViewById(R.id.btnNumber8);
-        btnNumber9 = (Button) findViewById(R.id.btnNumber9);
+        Button btnNumber5 = (Button) findViewById(R.id.btnNumber5);
+        Button btnNumber6 = (Button) findViewById(R.id.btnNumber6);
+        Button btnNumber7 = (Button) findViewById(R.id.btnNumber7);
+        Button btnNumber8 = (Button) findViewById(R.id.btnNumber8);
+        Button btnNumber9 = (Button) findViewById(R.id.btnNumber9);
 
-        txtResult = (TextView) findViewById(R.id.txtResult);
+        TextView txtResult = (TextView) findViewById(R.id.txtResult);
 
-        edtInput = (EditText) findViewById(R.id.edtInput);
+        EditText edtInput = (EditText) findViewById(R.id.edtInput);
 
         btnCE = (Button) findViewById(R.id.btnCE);
         btnC = (Button) findViewById(R.id.btnC);
