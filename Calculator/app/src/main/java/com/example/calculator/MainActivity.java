@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "+";
+                ACTION = "+";//Addition
                 if(!Double.isNaN(val1)){
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 + val2;
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         btnSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "-";
+                ACTION = "-";//Substraction
                 if(!Double.isNaN(val1)){
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 - val2;
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         btnMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "*";
+                ACTION = "*";//Multiplication
                 if(!Double.isNaN(val1)){
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 * val2;
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         btnDiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ACTION = "/";
+                ACTION = "/";//Division
                 if(!Double.isNaN(val1)){
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1/val2;
