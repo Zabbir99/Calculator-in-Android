@@ -1,6 +1,7 @@
 package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnDiv;
     Button btnDot;
     Button btnResult;
-    double val1=Double.NaN;
+    double val1 = Double.NaN;
     double val2;
     String ACTION;
 
@@ -38,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Button btnNumber8 = (Button) findViewById(R.id.btnNumber8);
         Button btnNumber9 = (Button) findViewById(R.id.btnNumber9);
 
-        TextView txtResult = (TextView) findViewById(R.id.txtResult);
+        final TextView txtResult = (TextView) findViewById(R.id.txtResult);
 
-        EditText edtInput = (EditText) findViewById(R.id.edtInput);
+        final EditText edtInput = (EditText) findViewById(R.id.edtInput);
 
         btnCE = (Button) findViewById(R.id.btnCE);
         btnC = (Button) findViewById(R.id.btnC);
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String number = edtInput.getText().toString();
-                if(number != null && number.length() > 0){
+                if (number != null && number.length() > 0) {
                     number = number.substring(0, number.length() - 1);
                 }
                 edtInput.setText(number);
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ACTION = "+";//Addition
-                if(!Double.isNaN(val1)){
+                if (!Double.isNaN(val1)) {
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 + val2;
                 } else {
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ACTION = "-";//Substraction
-                if(!Double.isNaN(val1)){
+                if (!Double.isNaN(val1)) {
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 - val2;
                 } else {
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ACTION = "*";//Multiplication
-                if(!Double.isNaN(val1)){
+                if (!Double.isNaN(val1)) {
                     val2 = Double.parseDouble(edtInput.getText().toString());
                     val1 = val1 * val2;
                 } else {
@@ -134,9 +135,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ACTION = "/";//Division
-                if(!Double.isNaN(val1)){
+                if (!Double.isNaN(val1)) {
                     val2 = Double.parseDouble(edtInput.getText().toString());
-                    val1 = val1/val2;
+                    val1 = val1 / val2;
                 } else {
                     val1 = Double.parseDouble(edtInput.getText().toString());
                 }
@@ -149,19 +150,19 @@ public class MainActivity extends AppCompatActivity {
         btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ACTION != null && ACTION.equals("+")){
+                if (ACTION != null && ACTION.equals("+")) {
                     double result = val1 + Double.parseDouble(edtInput.getText().toString());
                     txtResult.setText(null);
                     edtInput.setText(String.valueOf(result));
-                } else if(ACTION != null && ACTION.equals("-")){
+                } else if (ACTION != null && ACTION.equals("-")) {
                     double result = val1 - Double.parseDouble(edtInput.getText().toString());
                     txtResult.setText(null);
                     edtInput.setText(String.valueOf(result));
-                } else if(ACTION != null && ACTION.equals("*")){
+                } else if (ACTION != null && ACTION.equals("*")) {
                     double result = val1 * Double.parseDouble(edtInput.getText().toString());
                     txtResult.setText(null);
                     edtInput.setText(String.valueOf(result));
-                } else if(ACTION != null && ACTION.equals("/")){
+                } else if (ACTION != null && ACTION.equals("/")) {
                     double result = val1 / Double.parseDouble(edtInput.getText().toString());
                     txtResult.setText(null);
                     edtInput.setText(String.valueOf(result));
