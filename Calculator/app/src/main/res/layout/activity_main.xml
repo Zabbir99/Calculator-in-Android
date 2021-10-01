@@ -20,6 +20,10 @@
                 android:layout_span="4" />
         </TableRow>
         <TableRow
+            android:layout_width="130dp",
+            android:layout_height="200dp">
+        </TableRow>
+        <TableRow
             android:layout_width="wrap_content"
             android:layout_height="120dp">
             <EditText
