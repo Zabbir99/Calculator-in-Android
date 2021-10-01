@@ -116,6 +116,10 @@
                 android:text="0"
                 />
             <Button
+                android:id="@+id/btnNumber0"
+                android:text="0"
+                />
+            <Button
                 android:id="@+id/btnDot"
                 android:text="."
                 />
